@@ -58,7 +58,7 @@ getXML.onclick = () => {
 let getJson = document.querySelector('#getJSON')
 getJson.onclick = () => {
     const jsonHttp = new XMLHttpRequest()
-    jsonHttp.open('GET', ".g/5.json")
+    jsonHttp.open('GET', "./5.json")
     jsonHttp.onreadystatechange = () => {
         if (jsonHttp.readyState === 4 && jsonHttp.status === 200) {
             let parse = JSON.parse(jsonHttp.response);
